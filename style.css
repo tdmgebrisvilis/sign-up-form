@@ -1,0 +1,134 @@
+:root {
+    --width-left-side: 40vw;
+    --width-right-side: 60vw;
+    --background-color-main: #e9ecef;
+}
+
+:root.dark {
+    --border-btn: 1px solid rgb(220, 220, 220);
+    --color-base-bg: rgb(18, 18, 18);
+    --color-base-text: rgb(240, 240, 240);
+    --color-btn-bg: rgb(36, 36, 36);
+  }
+  
+  :root.light {
+    --border-btn: 1px solid rgb(36, 36, 36);
+    --color-base-bg: rgb(240, 240, 240);
+    --color-base-text: rgb(18, 18, 18);
+    --color-btn-bg: rgb(220, 220, 220);
+  }
+  body{
+}
+
+.container,
+.right-side {
+    display: flex;
+    height: 100vh;
+}
+/* LEFT SIDE */
+.left-side {
+    --font-family: 'Pacifico', cursive;
+    --color: white;
+    --background-color: rgba(0, 0, 0, 0.5);
+    width: var(--width-left-side);
+    height: 100vh;
+}
+.bg-img {
+    width: var(--width-left-side);
+    /* height: 99.73vh; */
+    height: 99.6%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 100px;
+    height: 120px;
+    font-family: var(--font-family);
+    font-size: 50px;
+    color: var(--color);
+    background: var(--background-color);
+    width: inherit;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+}
+
+/* RIGHT SIDE */
+.right-side {
+    --font-family: 'Oswald', sans-serif;
+    width: var(--width-right-side);
+    box-sizing: border-box;
+    flex-direction: column;
+    font-family: var(--font-family);
+    background-color: var(--background-color-main);
+}
+.right-side > * {
+    padding: 80px 80px 0 80px;
+
+}
+.right-side p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.right-side p:nth-of-type(1) {
+    margin-bottom: 30px;
+}
+.right-side .top-section {
+    background-color: #e9ecef;
+}
+.right-side h2 {
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+.right-side .mid-section {
+    background-color: white;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.personal-info,
+.contact-info,
+.password-entry {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.7);
+}
+input {
+    box-sizing: border-box;
+    height: 30px;
+    width: 300px;
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-indent: 5px;
+}
+input:focus {
+    outline: none;
+    border: 2px solid #6c757d;
+}
+
+.bottom-section {
+    margin-top: 50px;
+    padding-top: 30px;
+}

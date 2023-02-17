@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Pacifico&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-Up Form</title>
+</head>
+<body>
+<div class="container">
+    <div class="left-side">
+        <div class="logo">
+            <img class="logo-img" src="img/wink.png" alt="">
+            <h1>Join us</h1>
+        </div>
+        <img class="bg-img" src="img/bg-img.jpg" alt="background image">
+    </div>
+    <div class="right-side">
+        <div class="top-section">
+            <p>This is not a real online service!
+                <br>
+                However, sign up <span>now</span> to get started.
+            </p>
+            <p>You <span>know</span> you want to.</p>
+        </div>
+        <div class="mid-section">
+            <h2>Let's do this!</h2>
+            <form action="#" method="#">
+                <div class="inputs">
+                    <div class="personal-info">
+                        <div class="form-group">
+                            <label for="name">FIRST NAME</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name" required>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" name="phone-number" id="phone-number" required>
+                        </div>
+                    </div>
+                    <div class="password-entry">
+                        <div class="form-group">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="repeat-password">REPEAT PASSWORD</label>
+                            <input type="password" name="repeat-password" id="repeat-password" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="bottom-section">
+                    <button>Create Account</button>
+                    <span>Already have an account?</span><a href="#">Log in</a>
+                </div>
+            </form>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
