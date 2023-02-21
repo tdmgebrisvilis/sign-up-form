@@ -22,8 +22,9 @@ function displayErrorMsg(e){
     } 
 }
 // Theme toggle
+const root = document.documentElement;
+root.className = 'light'; // initial className
 function setTheme() {
-    const root = document.documentElement;
     const newTheme = root.className === 'dark' ? 'light' : 'dark';
     root.className = newTheme;
   }
