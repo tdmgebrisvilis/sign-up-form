@@ -1,6 +1,5 @@
-$(document).ready(function() {
-
 const { log, dir } = console;
+// Password logic
 const passwordInput = document.querySelector("#password");
 const repeatPasswordInput = document.querySelector("#repeat-password");
 const passwordMismatchMessage = document.querySelector("#password-mismatch");
@@ -11,8 +10,8 @@ passwordInput.addEventListener('keyup', comparePasswords);
 repeatPasswordInput.addEventListener('keyup', comparePasswords);
 
 function comparePasswords(e){
-    if (passwordInput.value === repeatPasswordInput.value) passwordMismatchMessage.classList.remove('visible') 
-    if (passwordInput.value !== repeatPasswordInput.value) passwordMismatchMessage.classList.add('visible') 
+    if (passwordInput.value === repeatPasswordInput.value || repeatPasswordInput.value === '') passwordMismatchMessage.classList.remove('visible') 
+    if (passwordInput.value !== repeatPasswordInput.value && repeatPasswordInput.value !== '') passwordMismatchMessage.classList.add('visible') 
 }
 
 function displayErrorMsg(e){
@@ -22,6 +21,11 @@ function displayErrorMsg(e){
         passwordMismatchMessage.classList.add('visible')
     } 
 }
-
-});
+// Theme toggle
+function setTheme() {
+    const root = document.documentElement;
+    const newTheme = root.className === 'dark' ? 'light' : 'dark';
+    root.className = newTheme;
+  }
   
+  document.querySelector('.theme-toggle').addEventListener('click', setTheme)
