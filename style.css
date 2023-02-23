@@ -226,7 +226,9 @@
     position: absolute;
     top: 0;
     right: 15px;
+    z-index: 1000;
 }
+
 #switch {
 	height: 0;
 	width: 0;
